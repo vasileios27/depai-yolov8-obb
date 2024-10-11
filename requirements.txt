@@ -1,0 +1,9 @@
+grpcio
+grpcio-tools
+numpy==1.26.4
+ultralytics==8.1.5
+torch==2.1.2
+torchvision==0.16.2
+transformers==4.37.0
+dill==0.3.8
+pytest

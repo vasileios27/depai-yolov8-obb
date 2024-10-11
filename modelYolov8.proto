@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message ImageRequest {
+    repeated string input_image_paths = 1;
+}
+
+message DictionaryEntry {
+    string image_path = 1;
+    bool processed = 2;
+    string result_path = 3;
+}
+message ImageResponse {
+    repeated DictionaryEntry entries = 1;
+}
+
+service ImageProcessor {
+    rpc ProcessImage(ImageRequest) returns (ImageResponse);
+}
